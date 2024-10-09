@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1.3;
+    display: flex;
+}
+.textgame {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.bg {
+    background: url(photos/Leshy.jpg) no-repeat center center fixed;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.logo {
+    margin-top: 50px;
+    margin-bottom: 130px;
+    margin-left: 100px;
+}
+.logo img {
+    width: 300px;
+    height: auto;
+}
+.navbox {
+    background-color: red;
+    width: 70%;
+    margin: auto;
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.navbox ul {
+    list-style-type: none;
+    padding: auto;
+    margin: auto;
+    display: flex;
+}
+.navbox a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 18px 20px;
+    text-align: center;
+}
+.navbox a:hover {
+    background-color: hsl(0, 0%, 20%);
+    color: black;
+}
+.blogbox {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: left;
+}
+.blogbox p {
+    padding-left: 26px;
+}
+.blogbox h2 {
+    padding-left: 26px;
+}
+.gamecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.gamebox .gametitle { /* Reset padding left karena dipengaruhi p blogbox */
+    padding-left: 0px;
+}
+.gamebox {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+.gameimage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.gamebox:hover {
+    background-color: hsl(0, 0%, 20%);
+    color: black;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+.gamebox:hover .overlay {
+    opacity: 1;
+}
+.gametitle {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.listgame ul {
+    padding: auto;
+    padding-left: 50px;
+    line-height: 25px;
+}
+.listgame a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+.gameetc {
+    text-align: center;
+}
+.gameunderline {
+    height: 20px;
+    border-bottom: 2px solid black;
+}
+.revimg {
+    display: flex;
+    justify-content: center;
+}
+.ssurl {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.myimg .text {
+    padding-left: 0px;
+}
+.myimg {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-bottom: 100px;
+    }
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+    .navbox {
+        width: 80%;
+    }
+    .navbox ul {
+        align-items: center;
+    }
+    .blogbox {
+        width: 80%; 
+    }
+    .blogbox p {
+        padding-left: 20px;
+    }
+    .blogbox h2 {
+        padding-left: 20px;
+    }
+    .textgame {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .gamebox {
+        width: 150px;
+        height: 200px;
+    }
+    .gametitle {
+        font-size: 16px; 
+    }
+    .listgame ul {
+        padding-left: 10px;
+    }
+    .myimg {
+        display: flex;
+        flex-direction: column;
+    }
+    .myimg img {
+        width: 80%;
+    }
+    .revimg img {
+        width: 80%;
+    }
+    .ssurl iframe {
+        width: 80%;
+    }
+    .ssurl img {
+        width: 80%;
+    }
+}
