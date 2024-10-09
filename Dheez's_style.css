@@ -207,7 +207,7 @@ body {
         display: flex;
         flex-direction: column;
     }
-    .revimg img {
+    .myimg img {
         width: 80%;
     }
     .ssurl iframe {
