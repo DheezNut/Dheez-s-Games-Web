@@ -154,6 +154,9 @@ body {
     align-items: center;
     flex-direction: column;
 }
+.myimg .text {
+    padding-left: 0px;
+}
 .myimg {
     display: flex;
     align-items: center;
