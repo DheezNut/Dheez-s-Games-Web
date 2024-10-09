@@ -1,4 +1,4 @@
-# Dheez-s-Games-Web <br>
+# Dheez-s-Games-Web
 Website ini dibuat untuk memberikan review game yang telah saya mainkan, walau tidak semua. Website ini adalah project kuliah dengan mata kuliah Pemrograman Web. <br>
 Kode yang digunakan adalah HTML dan CSS. <br>
 Fitur Web: <br>
